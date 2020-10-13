@@ -1,9 +1,9 @@
 # Simple Health Insurance Policy API 
 
-Provides routes for interfacing with a Postgres DB which holds information for policyholders.
+Provides an interface for managing policyholder and insured event data. Utilizing a Postgres DB for storage.
 
 ## Installation
-To run the app locally, first install all packages from requirements.txt into either your global Python environment, or
+To run the flask app locally, first install all packages from requirements.txt into either your global Python environment, or
 preferably a virtual environment for testing. 
 ### Install locally
 ```
