@@ -27,7 +27,6 @@ class HealthCheck(Resource):
 
     :return: A response with a 200 Status Code and a body of 'OK' if the api is healthy.
     """
-
     @staticmethod
     def get():
         return Response(dumps('OK'), status=200, mimetype='application/json')
