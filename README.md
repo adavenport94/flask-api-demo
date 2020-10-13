@@ -13,6 +13,14 @@ virtualenv -p python3 .
 source bin/activate or Scripts\activate on windows
 pip install -r requirements.txt
 ```
+## Running Postgres DB via Docker
+```
+docker pull postgres:alpine
+docker run --name postgres_gs -e POSTGREST_PASSWORD=1234 -d -p 5432:5432 postgres:alpine
+docker exec -it postgres_gs
+psql -U postgres
+create database gs;
+```
 ## Running the App
 Assuming you're using a local postgres db.
 ```
@@ -144,7 +152,4 @@ Example response:
 - passlib 1.7.4
 - psycopg2 2.8.6
 
-## Running Postgres DB via Docker
-```
-docker pull postgres
-```
+
