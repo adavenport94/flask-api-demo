@@ -8,7 +8,7 @@ preferably a virtual environment for testing.
 ### Install locally
 ```
 git clone git@github.com:andrewdavenport94/gs-takehome.git
-cd devops-takehome
+cd gs-takehome
 virtualenv -p python3 .
 source bin/activate
 pip install -r requirements.txt
