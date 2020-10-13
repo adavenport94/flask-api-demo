@@ -7,7 +7,7 @@ To run the app locally, first install all packages from requirements.txt into ei
 preferably a virtual environment for testing. 
 ### Install locally
 ```
-git clone git@github.com:andrewdavenport94/gs-takehome.git
+git clone https://github.com/andrewdaveport94/gs-takehome.git
 cd gs-takehome
 virtualenv -p python3 .
 source bin/activate
