@@ -137,7 +137,12 @@ Example response:
 ## Built With
 Python 3.7
 Flask 1.1.2
-
+Flask-SQLAlchemy 2.4.4
+Werkzeug 0.16.1
+aniso8601 8.0.0
+flask-restplus 0.13.0
+passlib 1.7.4
+psycopg2 2.8.6
 
 ## Running Postgres DB via Docker
 ```
