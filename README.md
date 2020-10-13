@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ## Running the App
 Assuming you're using a local postgres db.
 ```
-set DATABASE_URL=postgresql://postgres:1234@localhost/gs 
+set DATABASE_URL=postgresql://postgres:1234@localhost/gs
 python app.py
 ```
 
