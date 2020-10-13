@@ -7,4 +7,4 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
     CSRF_ENABLED = True
 
-    # e.g. DATABASE_URL='postgresql://postgres:1234@localhost/gs'
+    # i.e DATABASE_URL='postgresql://postgres:1234@localhost/gs'
