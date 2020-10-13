@@ -62,6 +62,8 @@ Example response:
         }
         ...
         ...
+
+*ssn-hash is not returned
 ```
 
 To call the route to create a new policyholder, direct a POST request to the following URL:
