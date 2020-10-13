@@ -10,7 +10,7 @@ preferably a virtual environment for testing.
 git clone https://github.com/andrewdaveport94/gs-takehome.git
 cd gs-takehome
 virtualenv -p python3 .
-source bin/activate
+source bin/activate or Scripts\activate on windows
 pip install -r requirements.txt
 ```
 ## Running the App
