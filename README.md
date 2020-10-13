@@ -1,4 +1,4 @@
-# GS Takehome - Health Insurance Policy API 
+# GS Take Home - Health Insurance Policy API 
 
 Provides an interface for managing policyholder and insured event data. Utilizing a Postgres DB for storage.
 
