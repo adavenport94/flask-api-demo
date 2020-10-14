@@ -39,6 +39,23 @@ http://127.0.0.1:5000/docs/
 ![image](images/swagger.png)
 
 ### Routes
+To call the route to create a new policyholder, direct a POST request to the following URL:
+```
+http://127.0.0.1:5000/policyholder/create_insured
+
+Example payload:
+{
+	"gender": "Male",
+	"date_of_birth": "2/6/1980",
+	"ssn": 111223333,
+	"smoking_status": true,
+	"allergies": "Nuts, Pollen",
+	"medical_conditions": "Asthma, Hypertension"
+}
+
+*ssn stored as a sha256 hash value
+```
+
 To call the route to get all policyholders, direct a GET request to the following URL:
 ```
 http://127.0.0.1:5000/policyholder/
@@ -67,23 +84,6 @@ Example response:
 
 ```
 
-To call the route to create a new policyholder, direct a POST request to the following URL:
-```
-http://127.0.0.1:5000/policyholder/create_insured
-
-Example payload:
-{
-	"gender": "Male",
-	"date_of_birth": "2/6/1980",
-	"ssn": 111223333,
-	"smoking_status": true,
-	"allergies": "Nuts, Pollen",
-	"medical_conditions": "Asthma, Hypertension"
-}
-
-*ssn stored as a sha256 hash value
-```
-
 To call the route to validate a policyholders ssn, direct a POST request to the following URL:
 ```
 http://127.0.0.1:5000/policyholder/validate_ssn
@@ -98,6 +98,20 @@ Example payload:
 To call the route to return a policyholder by id, direct a GET request to the following URL:
 ```
 http://127.0.0.1:5000/policyholder/{policyholder_id}
+```
+
+To call the route to create a new insured event, direct a POST request to the following URL:
+```
+http://127.0.0.1:5000/insured_event/create_insured_event
+
+Example payload:
+{
+  "date_of_incidence": "10/10/2020",
+  "billed_amount": 250,
+  "covered_amount": 150.5,
+  "type_of_issue": "Broken Wrist",
+  "policyholder_id": 1
+}
 ```
 
 To call the route to return all insured events, direct a GET request to the following URL:
@@ -116,20 +130,6 @@ Example response:
       "type_of_issue": "Broken Foot"
     }
   ]
-}
-```
-
-To call the route to create a new insured event, direct a POST request to the following URL:
-```
-http://127.0.0.1:5000/insured_event/create_insured_event
-
-Example payload:
-{
-  "date_of_incidence": "10/10/2020",
-  "billed_amount": 250,
-  "covered_amount": 150.5,
-  "type_of_issue": "Broken Wrist",
-  "policyholder_id": 1
 }
 ```
 
