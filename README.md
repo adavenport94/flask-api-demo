@@ -80,7 +80,7 @@ Example response:
         ...
         ...
 
-*ssn-hash is not returned. Ideally we wouldn't want to store ssn/sensitive data as is. An alternative solution might be to leverage two servers with cert and keys to perform encryption and decryption.
+*ssn-hash is not returned. Ideally we wouldn't want to store ssn/sensitive data as is. An alternative solution might be to leverage multiple servers with cert and keys to perform encryption and decryption.
 
 ```
 
