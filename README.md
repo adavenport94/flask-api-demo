@@ -93,6 +93,8 @@ Example payload:
   "policyholder_id": 1,
   "ssn": 11122333
 }
+
+Use case: to validate the user's identity. Checks hashed ssn with value provided.
 ```
 
 To call the route to return a policyholder by id, direct a GET request to the following URL:
