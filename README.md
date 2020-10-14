@@ -53,7 +53,7 @@ Example payload:
 	"medical_conditions": "Asthma, Hypertension"
 }
 
-*ssn stored as a sha256 hash value
+*ssn stored as a sha256 hash value (29,000 iterations & 16 byte salt)
 ```
 
 To call the route to get all policyholders, direct a GET request to the following URL:
