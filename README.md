@@ -41,7 +41,7 @@ http://127.0.0.1:5000/docs/
 ### Routes
 To call the route to get all policyholders, direct a GET request to the following URL:
 ```
-http://127.0.0.1:5000/policyholder
+http://127.0.0.1:5000/policyholder/
 
 Example response:
 {
