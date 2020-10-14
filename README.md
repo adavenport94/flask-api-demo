@@ -63,7 +63,8 @@ Example response:
         ...
         ...
 
-*ssn-hash is not returned
+*ssn-hash is not returned. Ideally we wouldn't want to store ssn/sensitive data as is. An alternative solution might be to leverage two servers with cert and keys to perform encryption and decryption.
+
 ```
 
 To call the route to create a new policyholder, direct a POST request to the following URL:
@@ -80,7 +81,7 @@ Example payload:
 	"medical_conditions": "Asthma, Hypertension"
 }
 
-*ssn stored as a hash value
+*ssn stored as a sha256 hash value
 ```
 
 To call the route to validate a policyholders ssn, direct a POST request to the following URL:
