@@ -149,6 +149,10 @@ Example response:
 }
 ```
 
+### DB Schema
+
+![image](images/db-schema.png)
+
 ## Built With
 - Python 3.7
 - Flask 1.1.2
