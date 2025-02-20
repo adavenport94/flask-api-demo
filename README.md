@@ -1,4 +1,4 @@
-# GS Take Home - Health Insurance Policy API 
+# Flask Demo - Health Insurance Policy API 
 
 Provides an interface (Flask API) for managing policyholder and insured event data. Utilizing a Postgres DB for storage.
 
